@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+
+    <string-array name="Currency">
+        <item>US Dollar(US$)</item>
+        <item>UK Pound(UK£)</item>
+        <item>SGP Dollar(SG$)</item>
+        <item>Jap Yen</item>
+    </string-array>
+</resources>

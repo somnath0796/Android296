@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NameChanger</string>
+    <string name="Display_text">Heyy! Touch That Button</string>
+    <string name="click_me">Click Me!</string>
+</resources>

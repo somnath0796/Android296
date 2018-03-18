@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="develops.mad.intentsapplication.MainActivity"
+    android:background="@android:color/darker_gray"
+    android:foregroundTint="@android:color/holo_blue_dark">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Next Activity"
+        android:id="@+id/nextactivity"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/transferData"
+        android:layout_above="@+id/nextactivity"
+        android:layout_alignStart="@+id/nextactivity"
+        android:layout_marginBottom="38dp"
+        android:layout_alignEnd="@+id/nextactivity"
+        android:textColor="@color/abc_primary_text_material_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Enter some data here: (String/ URL)"
+        android:id="@+id/textView"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/transferData"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/abc_primary_text_material_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Main Activity To Test intents &amp; intent filters"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/abc_primary_text_material_dark" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/nextactivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:src="@drawable/homescr" />
+
+</RelativeLayout>

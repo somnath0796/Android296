@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="develops.mad.billingapp.MainActivity"
+    android:background="@color/dim_foreground_material_light"
+    android:foreground="@color/abc_primary_text_material_dark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Items"
+        android:id="@+id/textView4"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:layout_below="@+id/OrderProducts"
+        android:layout_alignEnd="@+id/item3"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Apples - Washington"
+        android:id="@+id/item1"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/abc_primary_text_material_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Grapes"
+        android:id="@+id/item2"
+        android:layout_below="@+id/item1"
+        android:layout_alignStart="@+id/item1"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/abc_primary_text_material_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Water-Melon"
+        android:id="@+id/item3"
+        android:layout_below="@+id/item2"
+        android:layout_alignStart="@+id/item2"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/abc_primary_text_material_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Oranges"
+        android:id="@+id/item4"
+        android:layout_below="@+id/item3"
+        android:layout_alignStart="@+id/item3"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/abc_primary_text_material_dark" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinQty1"
+        android:layout_alignTop="@+id/item1"
+        android:layout_toEndOf="@+id/item1"
+        android:layout_marginStart="27dp"
+        android:spinnerMode="dropdown"
+        android:foreground="@color/abc_background_cache_hint_selector_material_light" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinQty2"
+        android:layout_above="@+id/item3"
+        android:layout_alignStart="@+id/spinQty1"
+        android:spinnerMode="dropdown"
+        android:foreground="@color/abc_primary_text_material_dark" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinQty3"
+        android:layout_above="@+id/item4"
+        android:layout_alignStart="@+id/spinQty2"
+        android:spinnerMode="dropdown"
+        android:foreground="@color/abc_primary_text_material_dark" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinQty4"
+        android:layout_alignTop="@+id/item4"
+        android:layout_alignStart="@+id/spinQty3"
+        android:spinnerMode="dropdown"
+        android:foreground="@color/abc_primary_text_material_dark" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/itemPrice1"
+        android:foreground="@android:color/background_light"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:layout_alignTop="@+id/spinQty1"
+        android:layout_alignStart="@+id/itemPrice2" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/itemPrice2"
+        android:foreground="@android:color/background_light"
+        android:layout_alignTop="@+id/spinQty2"
+        android:layout_alignStart="@+id/textView14"
+        android:textColor="@color/abc_primary_text_material_dark" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/itemPrice3"
+        android:foreground="@android:color/background_light"
+        android:layout_alignTop="@+id/spinQty3"
+        android:layout_alignStart="@+id/itemPrice4"
+        android:textColor="@color/abc_primary_text_material_dark" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/itemPrice4"
+        android:foreground="@android:color/background_light"
+        android:layout_alignStart="@+id/itemPrice2"
+        android:layout_alignTop="@+id/spinQty4"
+        android:textColor="@color/abc_primary_text_material_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Qty."
+        android:id="@+id/textView13"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignStart="@+id/spinQty1"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Price"
+        android:id="@+id/textView14"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:layout_above="@+id/item1"
+        android:layout_toEndOf="@+id/spinQty1"
+        android:layout_marginStart="32dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome! "
+        android:id="@+id/OrderProducts"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#e0d424"
+        android:textSize="25dp"
+        android:typeface="sans"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="CHECKOUT!"
+        android:id="@+id/buttonCheck"
+        android:layout_marginBottom="139dp"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView13" />
+
+</RelativeLayout>

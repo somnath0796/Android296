@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DBTest</string>
+    <string name="Button1_text">Get Data</string>
+</resources>

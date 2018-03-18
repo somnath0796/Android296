@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Intentfilters</string>
+    <string name="activity_2">ACTIVITY 2</string>
+    <string name="another_app">ANOTHER APP</string>
+    <string name="google_com">GOOGLE.COM</string>
+    <string name="message_from_activity_1">Message from activity 1</string>
+    <string name="go_back">Go BACK</string>
+</resources>
